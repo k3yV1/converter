@@ -1,0 +1,32 @@
+@media screen and (min-width: 576px) {
+  .converter-component__box {
+    padding: 15px !important;
+    .currency-rates-component {
+      .currency-rates-component__box-wrapper {
+        .box-wrapper__rates {
+          .rates__second-part {
+            table {
+              thead {
+                tr {
+                  th {
+                    padding: 10px;
+                    font-size: 16px;
+                  }
+                }
+              }
+  
+              tbody { 
+                tr {
+                  td { 
+                    font-size: 16px;
+                    padding-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
