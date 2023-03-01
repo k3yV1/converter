@@ -12,8 +12,6 @@ module.exports = {
         test: /\.vue$/,
         loader: "vue-loader",
       },
-      // this will apply to both plain `.js` files
-      // AND `<script>` blocks in `.vue` files
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: "url-loader",
@@ -34,12 +32,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
-        // options: {
-        //   presets: [["@babel/preset-env", { targets: "defaults" }]],
-        // },
       },
-      // this will apply to both plain `.css` files
-      // AND `<style>` blocks in `.vue` files
       {
         test: /\.css$/,
         use: ["vue-style-loader", "css-loader"],
@@ -50,8 +43,6 @@ module.exports = {
       },
     ],
   },
-  // Where to compile the bundle
-  // By default the output directory is `dist`
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
@@ -66,7 +57,6 @@ module.exports = {
     compress: true,
   },
   plugins: [
-    // make sure to include the plugin for the magic
     new VueLoaderPlugin(),
   ],
   resolve: {
