@@ -25,6 +25,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Compiles from webpack configuration
 ```
-
 npm run dev
 ```
